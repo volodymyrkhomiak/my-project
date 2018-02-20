@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ціна за кілометр 10 гривень");
+        System.out.println("Г–ВіГ­Г  Г§Г  ГЄВіГ«Г®Г¬ГҐГІГ° 10 ГЈГ°ГЁГўГҐГ­Гј");
         Taxi s = new Taxi();
         s.show();
     }
