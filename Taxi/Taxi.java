@@ -7,9 +7,9 @@ public class Taxi {
     private int shlyah;
     private int price = 10;
     void show(){
-        System.out.println("Введіть відстань: ");
+        System.out.println("Vidstan: ");
         Scanner sc = new Scanner(System.in);
         shlyah = sc.nextInt();
-        System.out.println("З вас " + shlyah*information()+" гривень");
+        System.out.println("Z vas " + shlyah*information()+" gryven");
     }
 }
