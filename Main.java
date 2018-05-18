@@ -1,38 +1,26 @@
-package com.company;
-import java.util.Scanner;
 
-public class Main {
+public class Main  {
 
-    public static void main(String[] args) {
+	    public static void main(String[] args) {
+		Lamp lamp = new Lamp();
+		ICommand LampOff = new LampOff(lamp);
+	        ICommand LampOn = new LampOn(lamp);
 
-        Scanner sc = new Scanner(System.in);
+	        AirCond air = new AirCond();
+	        ICommand airCondRun = new Condrun(air);
+	        ICommand airCondStop = new Condstop(air);
+	        ICommand airCondSet = new Condset(air);
 
+	        LampOn.execute();
+	        LampOff.execute();
 
+	        System.out.println();
 
-    System.out.println("Enter length of foursquare: ");
-        int sqlength = sc.nextInt();
-    System.out.println("Enter width of foursquare: ");
-        int sqwidth = sc.nextInt();
-
-
-        Foursquare sq = new Foursquare(sqlength,sqwidth, 0);
-    System.out.println(">> Square of foursquare: " + sq.Square());
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println(" ");
-
-// ----------------------------------------------------------------------------------
-
-    System.out.println("Enter length of prism: ");
-        int prlength = sc.nextInt();
-    System.out.println("Enter width of prism: ");
-        int prwidth = sc.nextInt();
-    System.out.println("Enter height of prism: ");
-        int prheight = sc.nextInt();
+	        airCondRun.execute();
+	        airCondSet.execute();
+	        airCondStop.execute();
 
 
-        Prism pr = new Prism(prlength,prwidth,prheight);
-    System.out.println(">> Square of prism: " + pr.Square());
+	    }
+	}
 
-
-    }}
