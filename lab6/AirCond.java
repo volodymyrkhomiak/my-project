@@ -2,14 +2,14 @@
 
 public class AirCond   {
     void run(){
-        System.out.println("Êîíäèö³îíåð çàïóñòèâñÿ");
+        System.out.println("Кондиціонер запустився");
     }
 
     void stop(){
-        System.out.println("Êîíäèö³îíåð çóïèíèâñÿ");
+        System.out.println("Кондиціонер зупинився");
     }
 
     void set(){
-        System.out.println("Êîíäèö³îíåð íàëàøòîâàíèé");
+        System.out.println("Кондиціонер налаштований");
     }
 }
